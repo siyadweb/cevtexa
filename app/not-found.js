@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <main className="inner-hero" style={{minHeight:"100vh"}}><div className="section-kicker"><span/> 404 / System not found</div><h1>This page went<br/><em>off the map.</em></h1><p>The page you requested does not exist or has moved. Let’s get you back into the system.</p><Link className="btn-main" href="/" style={{marginTop:30}}>Return home <span>↗</span></Link></main>}

@@ -1,0 +1,62 @@
+import { getPageSeo } from "../lib/seo";
+import ProductsClient from "./ProductsClient";
+
+export async function generateMetadata() {
+  const seo = await getPageSeo("/products");
+
+  return {
+    title: seo.title,
+    description: seo.description,
+
+    keywords:
+      seo.keywords.length > 0
+        ? seo.keywords
+        : [
+            "CEVTEXA products",
+            "HOMIC AI",
+            "AI real estate platform",
+            "AI agents",
+            "business automation",
+            "digital growth systems",
+            "3D visualization",
+            "AI products",
+          ],
+
+    alternates: {
+      canonical: seo.canonical,
+    },
+
+    openGraph: {
+      title: seo.title,
+      description: seo.description,
+      url: seo.canonical,
+      siteName: "CEVTEXA",
+      type: "website",
+      locale: "en_US",
+      images: [
+        {
+          url: seo.ogImage,
+          width: 1200,
+          height: 630,
+          alt: seo.title,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: seo.title,
+      description: seo.description,
+      images: [seo.ogImage],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
+
+export default function ProductsPage() {
+  return <ProductsClient />;
+}
