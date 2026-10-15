@@ -254,34 +254,34 @@ if (messageResult.error) {
             Home
           </a>
 
-          <a href="#services">
+          <a href="/services">
             Services
           </a>
 
-          <a href="#work">
+          <a href="/work">
             Work
           </a>
 
-          <a href="#about">
+          <a href="/about">
             About
           </a>
 
-          <a href="#process">
+          <a href="/process">
             Process
           </a>
 
-          <a href="#insights">
+          <a href="/insights">
             Insights
           </a>
 
-          <a href="#contact">
+          <a href="/contact">
             Contact
           </a>
         </nav>
 
         <a
           className="nav-cta"
-          href="#contact"
+          href="/contact"
         >
           Start a project <span>↗</span>
         </a>
@@ -321,7 +321,7 @@ if (messageResult.error) {
         </a>
 
         <a
-          href="#services"
+          href="/services"
           onClick={function () {
             setMenuOpen(false);
           }}
@@ -330,7 +330,7 @@ if (messageResult.error) {
         </a>
 
         <a
-          href="#work"
+          href="/work"
           onClick={function () {
             setMenuOpen(false);
           }}
@@ -339,7 +339,7 @@ if (messageResult.error) {
         </a>
 
         <a
-          href="#about"
+          href="/about"
           onClick={function () {
             setMenuOpen(false);
           }}
@@ -348,7 +348,7 @@ if (messageResult.error) {
         </a>
 
         <a
-          href="#process"
+          href="/process"
           onClick={function () {
             setMenuOpen(false);
           }}
@@ -357,7 +357,7 @@ if (messageResult.error) {
         </a>
 
         <a
-          href="#insights"
+          href="/insights"
           onClick={function () {
             setMenuOpen(false);
           }}
@@ -366,7 +366,7 @@ if (messageResult.error) {
         </a>
 
         <a
-          href="#contact"
+         href="/contact"
           onClick={function () {
             setMenuOpen(false);
           }}
@@ -415,14 +415,14 @@ if (messageResult.error) {
           <div className="hero-actions">
             <a
               className="btn-main"
-              href="#contact"
+              href="/contact"
             >
               Start a project <span>→</span>
             </a>
 
             <a
               className="btn-secondary"
-              href="#work"
+              href="/work"
             >
               See our work <span>▶</span>
             </a>
@@ -571,7 +571,7 @@ if (messageResult.error) {
 
           <a
             className="text-link"
-            href="#contact"
+            href="/contact"
           >
             View all projects <span>→</span>
           </a>
@@ -611,7 +611,7 @@ if (messageResult.error) {
                   <p>{item.meta}</p>
 
                   <a
-                    href="#contact"
+                   href="/contact"
                     aria-label={
                       "Discuss " +
                       item.title
@@ -769,7 +769,7 @@ if (messageResult.error) {
 
           <a
             className="btn-secondary"
-            href="#contact"
+            href="/contact"
           >
             Explore insights <span>→</span>
           </a>
